@@ -1,6 +1,6 @@
 # django-REST
 
-pre-requirement:
+# pre-requirement:
 
 1. ubuntu 16.04
 
@@ -15,16 +15,18 @@ pre-requirement:
 4. django-rest-framework
 
     $pip3 install djangorestframework
+ 
+# let's start djangoing
 
-5. create a django project
+1. create a django project
 
     $django-admin startproject api
     
-6. start app (in this example)
+2. start app (in this example)
 
     $python manage.py startapp kkbox
 
-7. add app in setting.py 
+3. add app in setting.py 
 
     INSTALLED_APPS = (
         ...
@@ -32,9 +34,9 @@ pre-requirement:
         ...
     )
 
-8. dev your app inside your app folder (kkbox, in this example)
+4. dev your app inside your app folder (kkbox, in this example)
 
-9. that's all! let us start in locahost to test our app
+5. that's all! let us start in locahost to test our app
 
     $python manage.py runserver (default run on localhost)
     
