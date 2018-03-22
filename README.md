@@ -16,11 +16,15 @@ pre-requirement:
 
     $pip3 install djangorestframework
 
-5. start app (in this example)
+5. create a django project
+
+    $django-admin startproject api
+    
+6. start app (in this example)
 
     $python manage.py startapp kkbox
 
-6. add app in setting.py 
+7. add app in setting.py 
 
     INSTALLED_APPS = (
         ...
@@ -28,8 +32,12 @@ pre-requirement:
         ...
     )
 
-7. add code inside your kkbox folder
+8. dev your app inside your app folder (kkbox, in this example)
 
-8. that's all! let us start in locahost to test our app
+9. that's all! let us start in locahost to test our app
 
-    $python manage.py runserver
+    $python manage.py runserver (default run on localhost)
+    
+    Alternatively, we can run on specific ip and port like:
+    
+    $python manage.py runserver 192.168.x.x:8000
