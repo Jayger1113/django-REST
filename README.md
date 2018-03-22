@@ -36,10 +36,10 @@
 
 4. dev your app inside your app folder (kkbox, in this example)
 
-5. that's all! let us start in locahost to test our app
+5. that's all! let us deploy on localhost
 
     $python manage.py runserver (default run on localhost)
     
-    Alternatively, we can run on specific ip and port like:
+    Alternatively, we can deploy on specific ip and port like:
     
     $python manage.py runserver 192.168.x.x:8000
