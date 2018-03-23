@@ -56,16 +56,16 @@ https://docs.docker.com/install/linux/docker-ce/ubuntu/#install-docker-ce-1
 
 # we are good to go!
 
-# 1. docker build custom django project
+1. docker build custom django project
 $sudo docker build -t="garyckhsu/mydjango" . 
 
-# 2. docker run our image="garyckhsu/mydjango" with container named my_docker_django and publish to port 8000
+2. docker run our image="garyckhsu/mydjango" with container named my_docker_django and publish to port 8000
 $sudo docker run -it --publish=8000:8000 --name my_docker_django garyckhsu/mydjango
 
 (I also script this step, you can just enter $sh dockerize_django.sh)
 
-# 3. open your browser typing http://localhost:8000/kkbox/ in your browser search bar 
+3. open your browser typing http://localhost:8000/kkbox/ in your browser search bar 
 
 should display like this:
 
-{"token": "KPg5NYYsZSf1EF/vcoqSbw=="}
+# {"token": "KPg5NYYsZSf1EF/vcoqSbw=="}
