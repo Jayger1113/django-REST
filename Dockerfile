@@ -1,11 +1,15 @@
-FROM django
+FROM python:3.5.2
 
-LAEBL maintainer garyhsu
+LABEL maintainer garyckhsu
 
 ADD . /my-django-app
 
 WORKDIR /my-django-app
 
-RUN pip install -r requirements.txt
+RUN pip3 install -r requirements.txt
 
-CMD [ "python", "./manage.py runserver" ]
+RUN ls -a
+
+EXPOSE 8000
+
+CMD [ "python", "./manage.py", "runserver", "0.0.0.0:8000" ]
